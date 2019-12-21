@@ -1,0 +1,82 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="320dip"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+<!--
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Locate"
+            android:onClick="showLocation"
+            android:layout_gravity="right" />
+
+        -->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:onClick="showParkingLot"
+            android:text="nearby parking" />
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:id="@+id/textView"
+        android:textSize="24dp" />
+
+
+
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="parkHere"
+
+        android:text="park here" />
+
+    <!--
+      map:cameraBearing="112.5"
+      map:cameraTargetLat="42.314083"
+      map:cameraTargetLng="-71.037929"
+      map:cameraTilt="30"
+      map:cameraZoom="13"
+      map:mapType="normal"
+      map:uiCompass="false"
+      map:uiRotateGestures="true"
+      map:uiScrollGestures="false"
+      map:uiTiltGestures="true"
+      map:uiZoomControls="false"
+      map:uiZoomGestures="true"/>
+    -->
+
+</LinearLayout>
